@@ -67,7 +67,7 @@ input:focus {
     float: right;
 }
 
-.topnav a:nth-child(n+2){
+.topnav a:nth-child(n+1){
     display: inline-block;
     text-decoration: none;
     color: rgb(95, 99, 104);
