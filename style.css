@@ -67,7 +67,7 @@ input:focus {
     float: right;
 }
 
-.topnav a{
+.topnav a:nth-child(n+2){
     display: inline-block;
     text-decoration: none;
     color: rgb(95, 99, 104);
@@ -84,3 +84,16 @@ input:focus {
 #obrazki:hover, #zaawansowane:hover{
     border: 1px solid lightgray;
 }
+
+
+
+#malelogo {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-size: 26px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: "Product Sans","Sans-serif";
+}
+
