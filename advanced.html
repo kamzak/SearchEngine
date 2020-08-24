@@ -4,6 +4,7 @@
         <title>Góógłę - szukanie zaawansowane</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
         <link rel="stylesheet" href="styleAdvanced.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         <div id="header">
@@ -22,13 +23,14 @@
         </div>
 
         <div id="container">
+        <form action="https://www.google.com/search" method="GET">
             <div class="row first">
                 <div class="col-2 mx-auto">
                     <p id="head">Znajdź strony zawierające...</p>
                 </div>
                 <div class="col-6 mx-auto">
                 </div>
-                <div class="col-4 mx-auto">
+                <div class="col-4 mx-auto hide">
                     <p id="secHead">By zrobić to za pomocą pola wyszukiwania.</p>
                 </div>
             </div>
@@ -38,9 +40,9 @@
                     <p>wszystkie te słowa: </p>
                 </div>
                 <div class="col-6 mx-auto">
-                    <input type="text" id="allwords" name="allwords" class="pole">
+                    <input type="text" id="allwords" name="as_q" class="pole">
                 </div>
-                <div class="col-4 mx-auto">
+                <div class="col-4 mx-auto hide">
                     <p class="desc">Wpisz szukane słowa: trójkolorowy rat terrier</p>
                 </div>
             </div>
@@ -49,9 +51,9 @@
                     <p>dokładnie to wyrażenie: </p>
                 </div>
                 <div class="col-6 mx-auto">
-                    <input type="text" id="exactwords" name="exactwords" class="pole">
+                    <input type="text" id="exactwords" name="as_epq" class="pole">
                 </div>
-                <div class="col-4 mx-auto">
+                <div class="col-4 mx-auto hide">
                     <p class="desc">Wpisz wyrażenie w cudzysłowach: "chart polski"</p>
                 </div>
             </div>
@@ -60,9 +62,9 @@
                     <p>dowolne z tych słów:</p>
                 </div>
                 <div class="col-6 mx-auto">
-                    <input type="text" id="anywords" name="anywords" class="pole">
+                    <input type="text" id="anywords" name="as_oq" class="pole">
                 </div>
-                <div class="col-4 mx-auto">
+                <div class="col-4 mx-auto hide">
                     <p class="desc">Wstaw OR między wpisane słowa: miniaturowy OR zwykły</p>
                 </div>
             </div>
@@ -71,9 +73,9 @@
                     <p>żadne z tych słów: </p>
                 </div>
                 <div class="col-6 mx-auto">
-                    <input type="text" id="nonewords" name="nonewords" class="pole">
+                    <input type="text" id="nonewords" name="as_eq" class="pole">
                 </div>
-                <div class="col-4 mx-auto">
+                <div class="col-4 mx-auto hide">
                     <p class="desc">Umieść znak minus przed niepożądanymi słowami: -gryzonie, -"terier"</p>
                 </div>
             </div>   
@@ -81,7 +83,8 @@
                 <div class="col-6">
                      <input type="submit" value="Wyszukiwanie zaawansowane" class="send">
                 </div>
-            </div>         
+            </div>   
+        </form>      
         </div>
     </body>
 </html>
